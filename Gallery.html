@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    
+    <nav>
+        <base target="_self">
+        <br>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Teachers Details.html">Teachers Detail</a></li>
+                <li><a href="Contact US.html">Contact Us</a></li>
+                
+            </ul>
+        </div>
+
+
+    <style>
+        .gallery-section {
+            background: linear-gradient(to right, #e3f2fd, #ffffff);
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
+            margin: 20px auto;
+            width: 80%;
+        }
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .gallery-box {
+            width: 200px;
+            height: 150px;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: #555;
+            border: 2px dashed #bbb;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .gallery-box:hover {
+            transform: scale(1.05);
+            background: #e0e0e0;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="gallery-section">
+        <h2>Our <span style="color: #007BFF;">Gallery</span></h2>
+        
+        <div class="gallery-container">
+            <div class="gallery-box">No Image Available</div>
+            <div class="gallery-box">No Image Available</div>
+            <div class="gallery-box">No Image Available</div>
+            <div class="gallery-box">No Image Available</div>
+            <div class="gallery-box">No Image Available</div>
+            <div class="gallery-box">No Image Available</div>
+        </div>
+    </div> 
+    
+    <footer>
+        <div class="footer-content">
+            <h3>SEERAT PUBLIC SCHOOL</h3>
+            <p>"At Seerat Public School, we are committed to fostering a learning environment that nurtures both academic excellence and strong ethical values. Our mission is to empower students with the knowledge and skills necessary to thrive in an ever-evolving world, while upholding integrity, responsibility, and compassion."</p>
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-contact">
+                <p>Email: info@seeratpublicschool.com</p>
+                <p>Phone: +92 XXXXXXXX</p>
+                <p>Address: Mochangi Road, Quetta, Pakistan</p>
+            </div>
+            <p>© 2025 Seerat Public School. All Rights Reserved | Seerat Educational System | Developed by Ahmed khan</p>
+
+        </div>
+    </footer>
+</body>
+</html>
